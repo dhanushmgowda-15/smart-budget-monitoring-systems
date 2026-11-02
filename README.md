@@ -245,4 +245,5 @@ All 22 tests pass:
     - If previous month had `$X > 0` and current month has `$0.00`: Evaluates to `-100.0%` (`"No expenditure this month"`).
 #   s m a r t - b u d g e t - m o n i t o r i n g - s y s t e m 1  
  #   s m a r t - b u d g e t - m o n i t o r i n g - s y s t e m 2  
+ #   s m a r t - b u d g e t - m o n i t o r i n g - s y s t e m s  
  
