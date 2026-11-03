@@ -1,2 +1,11 @@
-[tool.vercel]
-entrypoint = "backend.main:app"
+[project]
+name = "smart-budget-monitoring-systems"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "pydantic",
+    "python-multipart",
+    "requests",
+]
