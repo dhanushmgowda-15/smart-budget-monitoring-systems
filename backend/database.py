@@ -11,7 +11,8 @@ from contextlib import contextmanager
 
 def get_db_path() -> str:
     """Returns the current database path from environment or default."""
-    return os.environ.get("SPENDSENSE_DB_PATH", "spendsense.db")
+    default = "/tmp/spendsense.db" if os.environ.get("VERCEL") else "spendsense.db"
+    return os.environ.get("SPENDSENSE_DB_PATH", default)
 
 
 def _create_schema(conn: sqlite3.Connection) -> None:
