@@ -55,6 +55,16 @@ app = FastAPI(
     version="1.0.0",
     lifespan=lifespan,
 )
+app = FastAPI(
+    title="SpendSense API",
+    description="Smart Budget Monitoring System with Real-Time Threshold Alerts",
+    version="1.0.0",
+    lifespan=lifespan,
+)
+
+@app.get("/", tags=["System"])
+def root():
+    return {"status": "ok", "message": "SpendSense API is running. See /docs"}
 
 # Enable CORS for frontend clients
 app.add_middleware(
