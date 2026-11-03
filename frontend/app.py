@@ -16,9 +16,6 @@ import os
 from datetime import date, datetime
 from typing import Any, Dict, List, Optional
 
-import pandas as pd
-import requests
-import streamlit as st
 
 # Backend API Base URL (configurable via env var, defaults to localhost:8000)
 API_BASE_URL = os.environ.get("SPENDSENSE_API_URL", "http://127.0.0.1:8000")
