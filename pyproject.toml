@@ -9,5 +9,5 @@ dependencies = [
     "python-multipart",
     "requests",
 ]
-[project.scripts]
+[tool.vercel]
 app = "backend.main:app"
